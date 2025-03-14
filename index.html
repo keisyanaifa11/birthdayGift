@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zua's Day!</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome untuk ikon -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section - Restructured -->
+    <header>
+      <div class="container">
+        <h1 class="display-3"><strong>Happy Last Teen Years!</strong></h1>
+        <p class="lead fs-4">
+          (enjoy being 19 before the big 2-0 comes around!)
+        </p>
+      </div>
+    </header>
+
+    <!-- Cake Section - Moved outside header for better spacing -->
+    <div class="container-fluid cake-section mb-2">
+      <div class="container position-relative">
+        <div class="cake">
+          <div class="velas">
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+          </div>
+          <div class="cobertura"></div>
+          <div class="bizcocho"></div>
+        </div>
+        <h1 class="text-center">Blow out the candle, Zu!</h1>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Pesan Ucapan -->
+      <section class="message-card">
+        <h2 class="section-title"><strong>A Little Note for You</strong></h2>
+        <p class="lead">
+          Being 19 might be fun, but also scary. You might feel confused—should
+          you enjoy 19 or prepare for 20? No matter how confused you get, it's
+          all part of the process. Keep going, Zu!
+        </p>
+        <br />
+        <p class="text-end">
+          With love,<br />
+          <strong>Cece</strong>
+        </p>
+      </section>
+
+      <!-- Galeri Foto -->
+      <section>
+        <h2 class="section-title"><strong>Our Prettiest Photos</strong></h2>
+        <div class="row photo-gallery">
+          <div class="col-md-4">
+            <img
+              src="/img/img1.jpg"
+              alt="Foto 1"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="/img/img2.jpg"
+              alt="Foto 2"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="/img/img3.jpg"
+              alt="Foto 3"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="/img/img4.jpg"
+              alt="Foto 4"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="/img/img5.jpg"
+              alt="Foto 5"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="/img/img6.jpg"
+              alt="Foto 6"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Media Section (Video & Music) -->
+      <section class="media-section">
+        <h2 class="section-title">
+          <strong>Your Digital Documentation</strong>
+        </h2>
+        <div class="video-container">
+          <!-- Ganti dengan ID video YouTube yang sebenarnya -->
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YRvf00NooN8?si=rbiieogKyEk4yxCT"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h2 class="section-title"><strong>Your Fav Song</strong></h2>
+        <div class="spotify-container">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/089ywmt2aAZRb5zGn6uu8B?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          made with <i class="fas fa-heart heart-icon"></i> for your special day
+        </p>
+        <p>&copy; 2025 - Birthday Website</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle dengan Popper  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Membuat confetti
+        for (let i = 0; i < 50; i++) {
+          createConfetti();
+        }
+
+        // Fungsi untuk membuat confetti
+        function createConfetti() {
+          const confetti = document.createElement("div");
+          confetti.classList.add("confetti");
+
+          // Warna-warna confetti (tema abu-abu)
+          const colors = [
+            "#6e6e6e", // Abu-abu utama (primary)
+            "#2c2b2b", // Abu-abu tua (secondary)
+            "#92908d", // Abu-abu terang (light)
+            "#a8a8a8", // Abu-abu medium
+            "#4d4d4d", // Abu-abu gelap
+            "#d8d7d5", // Abu-abu pucat (background)
+          ];
+
+          // Mengatur properti confetti secara acak
+          confetti.style.backgroundColor =
+            colors[Math.floor(Math.random() * colors.length)];
+          confetti.style.left = Math.random() * 100 + "vw";
+          confetti.style.width = Math.random() * 10 + 5 + "px";
+          confetti.style.height = Math.random() * 10 + 5 + "px";
+          confetti.style.opacity = Math.random();
+          confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
+          confetti.style.animationDelay = Math.random() * 5 + "s";
+
+          document.body.appendChild(confetti);
+
+          // Menghapus confetti setelah animasi
+          setTimeout(() => {
+            confetti.remove();
+            createConfetti();
+          }, (parseFloat(confetti.style.animationDuration) + parseFloat(confetti.style.animationDelay)) * 1000);
+        }
+      });
+    </script>
+  </body>
+</html>
