@@ -80,7 +80,7 @@ header {
   }
 
   :root {
-    --D: 120px;
+    --D: 250px;
   }
 
   .birthday-message {
@@ -94,7 +94,7 @@ header {
 
 @media (max-width: 576px) {
   :root {
-    --D: 90px;
+    --D: 200px;
   }
 
   .birthday-message {
@@ -166,13 +166,12 @@ header {
 .spotify-container {
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .spotify-container iframe {
   border: none;
   width: 100%;
-  height: 380px;
+  height: 400px;
 }
 
 footer {
@@ -224,8 +223,7 @@ footer {
   }
 }
 
-/* ============================================== BASE
-*/
+/* ============================================== BASE */
 
 .cake:after {
   background: rgb(41, 34, 34);
@@ -238,8 +236,7 @@ footer {
   height: calc(var(--D) / 50);
 }
 
-/* ============================================== Candle
-*/
+/* ============================================== Candle */
 
 .velas {
   background: rgba(255, 255, 255, 1);
@@ -284,8 +281,7 @@ footer {
   animation: fuego 0.2s infinite;
 }
 
-/* ============================================== Animation Fire
-*/
+/* ============================================== Animation Fire*/
 
 @keyframes fuego {
   0% {
@@ -302,8 +298,7 @@ footer {
   }
 }
 
-/* ============================================== Frosting
-*/
+/* ============================================== Frosting */
 
 .cobertura {
   background: rgb(231, 188, 154);
@@ -338,8 +333,7 @@ footer {
   right: calc(var(--D) / 11);
 }
 
-/* ============================================== BIZCOCHO
-*/
+/* ============================================== BIZCOCHO */
 
 .bizcocho {
   background: rgba(109, 56, 38, 1);
